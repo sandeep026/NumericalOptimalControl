@@ -11,7 +11,7 @@ The system admits the following analytical solution, which can be later used to 
 ![image](https://user-images.githubusercontent.com/16457676/236629178-b6da4837-b1d8-454d-9ec4-2d67fb1abeba.png)
 
 # Numerical optimal control
-Direct methods are used to solve optimal control problem for a cart system. The optimal control problem is discretized and transformed to a nonlinear optimization problem and solved using the state of the art solver IPOPT. The numerical methods used for discretization are
+Direct methods [^2] are used to solve optimal control problem for a cart system. The optimal control problem is discretized and transformed to a nonlinear optimization problem and solved using the state of the art solver IPOPT. The numerical methods used for discretization are
 
 1. single shooting with piecewise constant control (RK45)
 2. multiple shooting with piecewise constant control (RK45)
@@ -23,11 +23,7 @@ Direct methods are used to solve optimal control problem for a cart system. The 
 - MATLAB/[OCTAVE](https://octave.org/)
 - [Casadi](https://web.casadi.org/)
 
-
-# Results
-
-The results are plotted in phase space for a grid size of 50 and they are in close agreement with the analytical solution.
-
 # References
 
 [^1]: Conway, B. A. and K. Larson (1998). Collocation versus differential inclusion in direct optimization. Journal of Guidance, Control, and Dynamics, 21(5), 780–785
+[^2]: Diehl, Moritz, and Sébastien Gros. "Numerical optimal control." Optimization in Engineering Center (OPTEC) (2011).
