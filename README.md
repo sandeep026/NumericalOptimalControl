@@ -17,9 +17,12 @@ Direct methods [^2] are used to solve optimal control problem for a cart system.
 2. multiple shooting with piecewise constant control (RK45)
 3. trapezoidal with piecewise linear/constant control 
 4. hermite simpson with piecewise linear control
-5. LGL pseudospectral
+5. LGL pseudospectral (The quadrature and diff matrices are taken from [^3])
 
 # Requirements
+
+To run the programs the following are required
+
 - MATLAB/[OCTAVE](https://octave.org/)
 - [Casadi](https://web.casadi.org/)
 
@@ -27,3 +30,4 @@ Direct methods [^2] are used to solve optimal control problem for a cart system.
 
 [^1]: Conway, B. A. and K. Larson (1998). Collocation versus differential inclusion in direct optimization. Journal of Guidance, Control, and Dynamics, 21(5), 780–785
 [^2]: Diehl, Moritz, and Sébastien Gros. "Numerical optimal control." Optimization in Engineering Center (OPTEC) (2011).
+[^3]: Shen, Jie, Tao Tang, and Li-Lian Wang. Spectral methods: algorithms, analysis and applications. Vol. 41. Springer Science & Business Media, 2011.
